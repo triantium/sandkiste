@@ -1,0 +1,200 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "salat kind",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "Salat",
+                    "values": [
+                        {
+                            "id": "MEAT",
+                            "name": {
+                                "value": "MEAT LOVE"
+                            }
+                        },
+                        {
+                            "id": "TUNA",
+                            "name": {
+                                "value": "TUNA TERRAN"
+                            }
+                        },
+                        {
+                            "id": "ORIGINAL",
+                            "name": {
+                                "value": "ORIGINAL CAESAR"
+                            }
+                        },
+                        {
+                            "id": "CHICKEN",
+                            "name": {
+                                "value": "CHICKEN CHAMP",
+                                "synonyms": [
+                                    "Chicken Champ",
+                                    "chickenchamp",
+                                    "chicken champ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SUNNY",
+                            "name": {
+                                "value": "SUNNY CHICKEN"
+                            }
+                        },
+                        {
+                            "id": "PRINCE",
+                            "name": {
+                                "value": "PRINCE PENNE"
+                            }
+                        },
+                        {
+                            "id": "SWEET",
+                            "name": {
+                                "value": "SWEET SHEPHERD"
+                            }
+                        },
+                        {
+                            "id": "VEGGIE",
+                            "name": {
+                                "value": "VEGGIE VITAL"
+                            }
+                        },
+                        {
+                            "id": "GRILLED",
+                            "name": {
+                                "value": "GRILLED VEGGIE"
+                            }
+                        },
+                        {
+                            "id": "VITALIAN",
+                            "name": {
+                                "value": "VITALIAN VITA"
+                            }
+                        },
+                        {
+                            "id": "PURE",
+                            "name": {
+                                "value": "PURE BASIC"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Dressing",
+                    "values": [
+                        {
+                            "id": "PAPRIKA",
+                            "name": {
+                                "value": " Paprika-Chili-Dressing"
+                            }
+                        },
+                        {
+                            "id": "ORANGE",
+                            "name": {
+                                "value": "Orange-Senf-Vinaigrette"
+                            }
+                        },
+                        {
+                            "id": "CAESAR",
+                            "name": {
+                                "value": "Caesar-Dressing"
+                            }
+                        },
+                        {
+                            "id": "TOMATE",
+                            "name": {
+                                "value": "Tomaten-Vinaigrette",
+                                "synonyms": [
+                                    "tomaten-dressing",
+                                    "tomate",
+                                    "tomatendressing",
+                                    "Tomatendressing",
+                                    "Tomate"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CURRY",
+                            "name": {
+                                "value": "Curry-Mango-Dressing"
+                            }
+                        },
+                        {
+                            "id": "AHORN",
+                            "name": {
+                                "value": "Ahorn-Balsamico-Vinaigrette"
+                            }
+                        },
+                        {
+                            "id": "HONIG",
+                            "name": {
+                                "value": "Honig-Dijon-Dressing"
+                            }
+                        },
+                        {
+                            "id": "KRAEUTER",
+                            "name": {
+                                "value": "Kräuter-Walnuss-Vinaigrette"
+                            }
+                        },
+                        {
+                            "id": "KAROTTE",
+                            "name": {
+                                "value": "Karotten-Vinaigrette"
+                            }
+                        },
+                        {
+                            "id": "BALSAMICO",
+                            "name": {
+                                "value": "Balsamico-Vinaigrette"
+                            }
+                        },
+                        {
+                            "id": "JOGHURT",
+                            "name": {
+                                "value": "Joghurt-Dressing"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "BrotTyp",
+                    "values": [
+                        {
+                            "id": "KEIN",
+                            "name": {
+                                "value": "Kein"
+                            }
+                        },
+                        {
+                            "id": "CIABATTA",
+                            "name": {
+                                "value": "Ciabatta"
+                            }
+                        },
+                        {
+                            "id": "KORNSPITZ",
+                            "name": {
+                                "value": "Kornspitz"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

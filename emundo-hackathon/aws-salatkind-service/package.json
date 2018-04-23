@@ -1,0 +1,15 @@
+{
+  "name": "salatkind-bestellassistent",
+  "version": "1.0.0",
+  "description": "Der Alexa-Skill für Salatkind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Kriegl",
+  "license": "ISC",
+  "dependencies": {
+    "@types/alexa-sdk": "^1.1.1",
+    "alexa-sdk": "^1.0.25"
+  }
+}

@@ -1,0 +1,369 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "salat kind",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "newPosition",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.DE_FIRST_NAME",
+                            "samples": [
+                                "{name}",
+                                "Bestellung für {name} aufnehmen"
+                            ]
+                        },
+                        {
+                            "name": "salat",
+                            "type": "Salat",
+                            "samples": [
+                                "{salat}"
+                            ]
+                        },
+                        {
+                            "name": "dressing",
+                            "type": "Dressing",
+                            "samples": [
+                                "{dressing}"
+                            ]
+                        },
+                        {
+                            "name": "brot",
+                            "type": "BrotTyp",
+                            "samples": [
+                                "{brot}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "neue bestellung für {name} {salat} {dressing} {brot}",
+                        "neue Bestellung für {name} ",
+                        "neue Bestellung "
+                    ]
+                },
+                {
+                    "name": "order",
+                    "slots": [],
+                    "samples": [
+                        "senden",
+                        "Bei Salatkind bestellen"
+                    ]
+                },
+                {
+                    "name": "loescheBestellung",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.DE_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "lösche {name}",
+                        "lösche Bestellung für {name}"
+                    ]
+                },
+                {
+                    "name": "listeBestellugen",
+                    "slots": [],
+                    "samples": [
+                        "Bestellungen"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Salat",
+                    "values": [
+                        {
+                            "id": "MEAT",
+                            "name": {
+                                "value": "MEAT LOVE"
+                            }
+                        },
+                        {
+                            "id": "TUNA",
+                            "name": {
+                                "value": "TUNA TERRAN"
+                            }
+                        },
+                        {
+                            "id": "ORIGINAL",
+                            "name": {
+                                "value": "ORIGINAL CAESAR"
+                            }
+                        },
+                        {
+                            "id": "CHICKEN",
+                            "name": {
+                                "value": "CHICKEN CHAMP",
+                                "synonyms": [
+                                    "Chicken Champ",
+                                    "chickenchamp",
+                                    "chicken champ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SUNNY",
+                            "name": {
+                                "value": "SUNNY CHICKEN"
+                            }
+                        },
+                        {
+                            "id": "PRINCE",
+                            "name": {
+                                "value": "PRINCE PENNE"
+                            }
+                        },
+                        {
+                            "id": "SWEET",
+                            "name": {
+                                "value": "SWEET SHEPHERD"
+                            }
+                        },
+                        {
+                            "id": "VEGGIE",
+                            "name": {
+                                "value": "VEGGIE VITAL"
+                            }
+                        },
+                        {
+                            "id": "GRILLED",
+                            "name": {
+                                "value": "GRILLED VEGGIE"
+                            }
+                        },
+                        {
+                            "id": "VITALIAN",
+                            "name": {
+                                "value": "VITALIAN VITA"
+                            }
+                        },
+                        {
+                            "id": "PURE",
+                            "name": {
+                                "value": "PURE BASIC"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Dressing",
+                    "values": [
+                        {
+                            "id": "PAPRIKA",
+                            "name": {
+                                "value": " Paprika-Chili-Dressing"
+                            }
+                        },
+                        {
+                            "id": "ORANGE",
+                            "name": {
+                                "value": "Orange-Senf-Vinaigrette"
+                            }
+                        },
+                        {
+                            "id": "CAESAR",
+                            "name": {
+                                "value": "Caesar-Dressing"
+                            }
+                        },
+                        {
+                            "id": "TOMATE",
+                            "name": {
+                                "value": "Tomaten-Vinaigrette",
+                                "synonyms": [
+                                    "tomaten-dressing",
+                                    "tomate",
+                                    "tomatendressing",
+                                    "Tomatendressing",
+                                    "Tomate"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CURRY",
+                            "name": {
+                                "value": "Curry-Mango-Dressing"
+                            }
+                        },
+                        {
+                            "id": "AHORN",
+                            "name": {
+                                "value": "Ahorn-Balsamico-Vinaigrette"
+                            }
+                        },
+                        {
+                            "id": "HONIG",
+                            "name": {
+                                "value": "Honig-Dijon-Dressing"
+                            }
+                        },
+                        {
+                            "id": "KRAEUTER",
+                            "name": {
+                                "value": "Kräuter-Walnuss-Vinaigrette"
+                            }
+                        },
+                        {
+                            "id": "KAROTTE",
+                            "name": {
+                                "value": "Karotten-Vinaigrette"
+                            }
+                        },
+                        {
+                            "id": "BALSAMICO",
+                            "name": {
+                                "value": "Balsamico-Vinaigrette"
+                            }
+                        },
+                        {
+                            "id": "JOGHURT",
+                            "name": {
+                                "value": "Joghurt-Dressing"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "BrotTyp",
+                    "values": [
+                        {
+                            "id": "KEIN",
+                            "name": {
+                                "value": "Kein"
+                            }
+                        },
+                        {
+                            "id": "CIABATTA",
+                            "name": {
+                                "value": "Ciabatta"
+                            }
+                        },
+                        {
+                            "id": "KORNSPITZ",
+                            "name": {
+                                "value": "Kornspitz"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "newPosition",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1132394556997"
+                    },
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.DE_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1132394556997.1482695661889"
+                            }
+                        },
+                        {
+                            "name": "salat",
+                            "type": "Salat",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1132394556997.962737893424"
+                            }
+                        },
+                        {
+                            "name": "dressing",
+                            "type": "Dressing",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1132394556997.1227463040980"
+                            }
+                        },
+                        {
+                            "name": "brot",
+                            "type": "BrotTyp",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1132394556997.230653255653"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "order",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": []
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1132394556997.1482695661889",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Für wen wird bestellt?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1132394556997.1227463040980",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Mit welchem Dressing?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1132394556997.230653255653",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Und noch das Brot?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1132394556997",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Ist die Bestellung für {name}   {salat} mit {dressing} und {brot} richtig."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1132394556997.962737893424",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Welchen salat willst du?"
+                    }
+                ]
+            }
+        ]
+    }
+}
