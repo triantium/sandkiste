@@ -69,7 +69,7 @@ public class VoterTest {
         List<String> userList = new ArrayList();
         userList.add(c.username);
         try {
-            for (int i = 0; i < 90000; i++) {
+            for (int i = 0; i < 100; i++) {
 
                 c.prepareTest();
                 String result = c.username;

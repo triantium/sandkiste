@@ -24,8 +24,11 @@ public class NewMain {
 
             }
         }
+        System.out.println("Iterations:\t" + iterations);
+        System.out.println("Waittime:\t" + waittime);
 
         for (int i = 0; i < iterations; i++) {
+            System.out.println("starting iteration " + (i + 1));
             Voter cheat = new Voter();
             cheat.waitTime = waittime;
             try {
@@ -39,6 +42,7 @@ public class NewMain {
             } finally {
                 cheat.quit();
             }
+            System.out.println("finished iteration " + (i + 1));
         }
 
     }
